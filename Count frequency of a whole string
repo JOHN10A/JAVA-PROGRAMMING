@@ -1,0 +1,33 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();//h h e l l o
+        int count;
+        String visited = "";
+        for(int i=0;i<str.length();i++)
+        {
+            char s = str.charAt(i);//h 
+            if(visited.contains(String.valueOf(s)))
+            {
+                continue;
+            }
+            else
+            {
+                count = 0;
+                for(int j=0;j<str.length();j++)
+                {
+                    if(str.charAt(i) == str.charAt(j))
+                    {
+                        count++;
+                    }
+                }
+                System.out.println(str.charAt(i)+" : "+count);
+                visited = visited + str.charAt(i);
+            }
+        }
+    }
+}
