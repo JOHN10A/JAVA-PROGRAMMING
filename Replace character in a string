@@ -1,0 +1,16 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();//JOHN BOSCO A
+        System.out.print("Enter a letter to replace: ");
+        String s = sc.next();//O
+        System.out.print("Enter a new letter: ");
+        String s2 = sc.next();//J
+        String s3 = str.replace(s,s2);//O--->J
+        System.out.print("After replaced: "+s3);//JJHN BJSCJ A
+    }
+}
