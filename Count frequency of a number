@@ -1,0 +1,27 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {1, 2, 3, 2, 4, 2, 5};
+        int count=0;
+        System.out.print("Enter the number to count frequency: ");
+        int num = sc.nextInt();
+        for(int i=0;i<arr.length;i++)
+        {
+            if(num == arr[i])
+            {
+                count++;
+            }
+        }
+        if(count>0)
+        {
+            System.out.print("Frequency of the given number: "+count);
+        }
+        else
+        {
+            System.out.print("Number not found");
+        }
+    }
+}
