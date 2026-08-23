@@ -1,0 +1,32 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter no of elements to insert: ");
+        int ele = sc.nextInt();
+        int[] arr = new int[ele];
+        System.out.println("Enter "+ele+" elements: ");
+        for(int i=0;i<ele;i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("Enter the number to search: ");
+        int num = sc.nextInt();
+        boolean found = false;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(num == arr[i])
+            {
+                System.out.print("Number "+num+" found at index value: "+i);
+                found = true;
+                break;
+            }
+        }
+        if(!found)
+        {
+            System.out.print("Number not found");
+        }
+    }
+}
