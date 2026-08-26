@@ -1,0 +1,19 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        int[] arr = {45, 12, 78, 3, 29, 16};
+        int smallest = arr[0];
+        int i=1;
+        while(i<arr.length)
+        {
+            if(arr[i] < smallest)
+            {
+                smallest = arr[i];
+            }
+            i++;
+        }
+        System.out.print("Smallest Number: "+smallest);
+    }
+}
