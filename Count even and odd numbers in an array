@@ -1,0 +1,24 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        int[] arr = {45, 12, 78, 3, 29, 16};
+        int even = 0, odd = 0;
+        int i=0;
+        while(i<arr.length)
+        {
+            if(arr[i]%2 == 0)
+            {
+                even++;
+            }
+            else 
+            {
+                odd++;
+            }
+            i++;
+        }
+        System.out.println("Even numbers: "+even);
+        System.out.print("Odd numbers: "+odd);
+    }
+}
