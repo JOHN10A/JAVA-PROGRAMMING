@@ -1,0 +1,27 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {10, 20, 30, 40, 50, 60};//10 10 20 30 40 50
+        System.out.print("How many times should rotate: ");
+        int k = sc.nextInt();
+        int n = 0;
+        while(n < k)
+        {
+            int last = arr[arr.length-1];
+            for(int i=arr.length-1;i>0;i--)
+            {
+                arr[i] = arr[i-1];
+            }
+            arr[0] = last;
+            n++;
+
+        }
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
