@@ -1,0 +1,32 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        int[] arr = {2, -1, 3, -2};
+        int sum = 0;
+        int temp_sum;
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=i;j<arr.length;j++)
+            {
+                temp_sum = 0;
+                for(int k=i;k<=j;k++)
+                {
+                    temp_sum = temp_sum + arr[k];
+                }
+                if(temp_sum > sum)
+                {
+                    list.clear();
+                    for(int n=i;n<=j;n++)
+                    {
+                        list.add(arr[n]);
+                    }
+                    sum = temp_sum;
+                }
+            }
+        }
+        System.out.print("Maximum Sub-Array: "+list);
+    }
+}
