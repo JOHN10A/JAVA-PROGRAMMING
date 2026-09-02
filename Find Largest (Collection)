@@ -1,0 +1,18 @@
+import java.util.*;
+class basic
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(10,20,50,99,2));
+        int largest = numbers.get(0);
+        for(int i=1;i<numbers.size();i++)
+        {
+            if(numbers.get(i) > largest)
+            {
+                largest = numbers.get(i);
+            }
+        }
+       System.out.print("Largest Number: "+largest);
+
+    }
+}
